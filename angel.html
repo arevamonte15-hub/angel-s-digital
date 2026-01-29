@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ANGEL’s DIGITAL</title>
+
+<!-- GOOGLE FONTS -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* GENERAL */
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* default text/subtitles = Poppins */
+    background: #f5f4f2;
+    color: #4a4a4a;
+}
+
+/* HEADINGS / TITLES */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* headings = fancy serif */
+}
+
+/* NAVIGATION */
+nav {
+    position: sticky;
+    top: 0;
+    background: #5a4b3f;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+nav .logo {
+    font-family: 'Playfair Display', serif;
+    color: #ffffff;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #eae6df; 
+    font-size: 14px;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* PROFILE PHOTO */
+.profile-photo {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.profile-photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #5a4b3f;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: #e6e2de;
+    color: #4a4a4a;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+.hero p {
+    margin: 5px 0;
+    font-size: 16px;
+    line-height: 1.45; /* compact */
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+}
+section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+/* LEFT-ALIGNED TEXT */
+.left-text {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    line-height: 1.45; /* compact spacing */
+    background: #fdfaf7;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* GRID FOR CARDS */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* CARD */
+.card {
+    position: relative;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+.card img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* CAPTION ON HOVER */
+.caption {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(90,75,63,0.85); 
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    line-height: 1.4; /* compact captions */
+}
+.card:hover .caption {
+    opacity: 1;
+}
+
+/* FOOTER */
+footer {
+    background: #5a4b3f;
+    color: #eae6df;
+    text-align: center;
+    padding: 30px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">ANGEL’s DIGITAL</div>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#relationship">Relationship</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#music">Music</a></li>
+    </ul>
+</nav>
+
+<!-- PROFILE PHOTO -->
+<div class="profile-photo">
+    <img src="angel.jpg" alt="Profile Picture">
+</div>
+
+<!-- HERO -->
+<div id="hero" class="hero">
+    <h1>Princess Angel C. Revamonte</h1>
+    <p>“Whatever is worth doing is worth doing well”⋆˚࿔ᯓ★</p>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>little info ! ⋆˚࿔</h2>
+    <div class="left-text">
+        <p> - nickname: ely/eli ₍ᐢ. .ᐢ₎</p>
+        <p> - age: 18 
+             - sagittarius
+            </p>
+        <p> - loves: kpop, k-dramas, pets, iced coffees, mangoes, kind people</p>
+        <p> - hates: rude people, loud noises, heavy dramas (I prefer romantic comedies & sitcoms)</p>
+        <p>- I have a boyfriend and my favorite stuffed toy named CALI given by him.</p>
+    </div>
+</section>
+
+<!-- LOVE -->
+<section id="relationship">
+    <h2> ⋆˚꩜｡</h2>
+    <div class="left-text">
+        <p>I am an only daughter of my mom and dad but their oldest. My mom and dad already have their own family. I'm from Tarlac City but now in Sablayan because of a personal reason. I don't like socializing and much talking. :pp </p>
+    </div>
+</section>
+
+<!-- LOVE -->
+<section id="relationship">
+    <h2>my mav ⋆˚꩜｡</h2>
+    <div class="left-text">
+        <p>I have a boyfriend named Raven, my very cute, pretty, loving boyfie. He’s always there when I need someone and is very consistent in knowing me more. We have CALI, our first stuffed toy. He's my safe space !</p>
+    </div>
+</section>
+
+<!-- FAVORITES -->
+<section id="favorites">
+    <h2>a huge fan of ⋮ ⌗ ┆</h2>
+    <div class="grid">
+        <div class="card"><img src="NIKI.jpg"><div class="caption">NIKI</div></div>
+        <div class="card"><img src="HALE.jpg"><div class="caption">HALE</div></div>
+        <div class="card"><img src="TVGIRL.jpg"><div class="caption">TV Girl</div></div>
+        <div class="card"><img src="1975.jpg"><div class="caption">The 1975</div></div>
+        <div class="card"><img src="arthur.jpg"><div class="caption">Arthur Nery</div></div>
+    </div>
+</section>
+
+<!-- MUSIC -->
+<section id="music">
+    <h2>on repeat ⋮ ⌗ ┆</h2>
+         <div class="card"><img src="pain.jpg"><div class="caption">heirloom pain </div></div>
+        <div class="card"><img src="lime.jpg"><div class="caption">limewolf</div></div>
+        <div class="card"><img src="mean.jpg"><div class="caption">wouldn't mean a thing</div></div>
+        <div class="card"><img src="king.jpg"><div class="caption">the party & the after party</div></div>
+    </div>
+  
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+    <h2>angel's fav gal ⋆˚꩜｡</h2>
+    <h3>Drinks</h3>
+    <div class="grid">
+        <div class="card"><img src="drink1.jpg"><div class="caption">mogu mogu</div></div>
+        <div class="card"><img src="drink2.jpg"><div class="caption">vanilla latte</div></div>
+
+    </div>
+
+    <h3>snackuu ｡𖦹°°‧</h3>
+    <div class="grid">
+        <div class="card"><img src="snack1.jpg"><div class="caption">friesss </div></div>
+        <div class="card"><img src="
+        snack2.jpg"><div class="caption">weeddds</div></div>
+     
+    </div>
+
+    <h3>must watch ! ⋆˚࿔</h3>
+    <div class="grid">
+        <div class="card"><img src="lythsab.jpg"><div class="caption">Love You to the Stars and Back</div></div>
+        <div class="card"><img src="fivefeet.jpg"><div class="caption">Five Feet Apart</div></div>
+        <div class="card"><img src="meangirls.jpg"><div class="caption">Mean Girls</div></div>
+        <div class="card"><img src="how.jpg"><div class="caption">How to Lose a Guy in 10 Days</div></div>
+    </div>
+
+    <h3>pantone list ⋆˙⟡</h3>
+    <div class="grid">
+        <div class="card"><img src="demi.jpg"><div class="caption">demitasse</div></div>
+        <div class="card"><img src="peat.jpg"><div class="caption">peat</div></div>
+        <div class="card"><img src="grey.jpg"><div class="caption">gadget grey</div></div>
+        <div class="card"><img src="ivory.jpg"><div class="caption">Ivory white</div></div>
+    </div>
+</section>
+
+<footer>
+    © 2026 ANGEL’s DIGITAL
+</footer>
+
+</body>
+</html>
